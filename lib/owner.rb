@@ -33,10 +33,12 @@ class Owner
      Cat.all.find_all {|cat_object| cat_object.owner == self}
    end 
    
-   def buy_cat
+   def buy_cat(new_cat)
+     Cat.new(new_cat, self)
    end 
    
-   def buy_dog
+   def buy_dog(new_dog)
+     Dog.new(new_dog, self)
    end 
    
    def walk_dogs
