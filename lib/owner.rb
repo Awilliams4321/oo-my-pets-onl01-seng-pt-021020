@@ -12,6 +12,12 @@ class Owner
   def self.all 
     @@all 
   end 
+  
+  def self.count
+  end 
+  
+  def self.reset_all
+  end
    
    def dogs 
      Dog.all.find_all {|dog_object| dog_object.owner == self}
@@ -20,5 +26,24 @@ class Owner
    def cats 
      Cat.all.find_all {|cat_object| cat_object.owner == self}
    end 
+   
+   def buy_cat
+   end 
+   
+   def buy_dog
+   end 
+   
+   def walk_dogs
+   end
+   
+   def feed_cats
+   end 
+   
+   def sell_pets
+   end 
+   
+   def list_pets
+   end 
+   
    
 end
