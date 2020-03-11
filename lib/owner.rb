@@ -8,5 +8,15 @@ class Owner
     @name = name 
   end 
   
-    
+  def self.all 
+    @@all 
+  end 
+  
+  def species 
+     @species = human
+   end 
+   
+   def say_species
+     puts "I am human."
+   end 
 end
