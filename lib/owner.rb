@@ -14,10 +14,16 @@ class Owner
   end 
   
   def self.count
+    self.all.count 
   end 
   
   def self.reset_all
+    self.all.clear 
   end
+   
+   def say_species
+     "I am a #{self.species}."
+   end 
    
    def dogs 
      Dog.all.find_all {|dog_object| dog_object.owner == self}
